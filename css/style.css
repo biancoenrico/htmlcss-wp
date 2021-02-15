@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+/*COMMON*/
+
+.layover{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.font-gray{
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
 /*principal container*/
 .wrapper{
     width: 80%;
@@ -14,24 +30,65 @@
 /*header*/
 .logo{
     height: 100px;
-    background-color: violet;
 }
 
-.head-block-bottom{
-    height: 300px;
-    background-color: yellow;
+.logo-img{
+    height: 100%;
+}
+
+/* Menù list */
+.menu{
+
     margin: 2% 0;
 }
 
-/*main*/
-.main-block-top{
-    height: 75px;
-    background-color: cyan;
+.link a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.main-block-bottom{
-    background-color: rgb(30, 196, 252);
+.link{
+    display: inline-block;
+    margin: 2% 0;
+    margin-right: 20px;
 }
+
+/* Banner */
+.banner{
+    height: 500px;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 15px;
+    position: relative;
+    margin: 2% 0;
+}
+
+.banner-text{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 60%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MAIN */
+
+.main-title{
+    margin: 2% 0;
+}
+
+.main-title h2{
+    color: black;
+}
+
 
 /*clearfix main*/
 .clearfix::after{
@@ -40,26 +97,51 @@
     clear: both;
 }
 
-.block{
+
+.col{
     float: left;
-    height: 300px;
-    background-color: cyan;
 }
-.left{
+
+h4{
+    margin: 2% 0;
+}
+
+.col-img{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.col img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.col-left{
     width: 20%;
     margin-top: 1%;
 }
-.center{
+.col-center{
     width: 58%;
     margin: 1% 1%;
 }
-.right{
+.col-right{
     width: 20%;
     margin-top: 1%;
 }
 /*footer*/
-.footer-block{
+.footer{
     height: 50px;
-    background-color: darkorchid;
     margin-top: 1%;
+}
+
+.footer p{
+    margin: 2%;
+    text-align: center;
+}
+
+.footer span{
+    color: red;
 }
